@@ -8,9 +8,11 @@ import { NumbercalculatorService } from '../numbercalculator.service';
 })
 export class CalculatorComponent implements OnInit {
 
+  calculator: number[];
+
+
   constructor(numberCalculatorService: NumbercalculatorService) { this.calculator = numberCalculatorService.getCourses(); }
 
-  calculator: number[];
   clickSimulator: number;
 
   clickNumbers(event: any) {

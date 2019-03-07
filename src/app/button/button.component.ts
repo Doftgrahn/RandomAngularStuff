@@ -11,13 +11,13 @@ export class ButtonComponent implements OnInit {
 
   buttonTitle = 'Sign in!'
 
-  onClick($event) {
+  onClick() {
     if (this.state) {
-      this.buttonTitle = 'Sign in'
+      this.buttonTitle = 'Sign Out'
       this.state = false;
     }
     else {
-      this.buttonTitle = 'Sign out'
+      this.buttonTitle = 'Sign In'
       this.state = true
     }
   }

@@ -6,12 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shownumber.component.scss']
 })
 export class ShownumberComponent implements OnInit {
+
   defaultValue: number = 0;
+
   increaseValue() {
     this.defaultValue++;
   }
+
   decreaseValue($event: any) {
-    if (this.defaultValue === 0) {
+    if (this.defaultValue == 0) {
       $event.target.disabled = true;
     } else {
       this.defaultValue--;
@@ -19,15 +22,10 @@ export class ShownumberComponent implements OnInit {
     $event.target.disabled = false;
   }
 
-
-
-
-
-
-
-  constructor() { }
-
-  ngOnInit() {
+  resetDefaultValue() {
+    this.defaultValue = 0;
   }
 
+  constructor() { }
+  ngOnInit() {}
 }

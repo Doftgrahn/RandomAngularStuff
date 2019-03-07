@@ -4,18 +4,31 @@
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  color:white;
+  color: white;
+}
+
+input {
+  color: black;
 }
 
 html {
+  padding: 20px;
   background: url("./assets/pic2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
   display: flex;
   min-height: 100%;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
+
+div {
+  box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+
 button {
-  color:black;
+  color: black;
 }
