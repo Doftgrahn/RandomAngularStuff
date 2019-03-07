@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+}
+
+html {
+  background: url("./assets/pic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  color:black;
+}
