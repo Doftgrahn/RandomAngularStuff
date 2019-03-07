@@ -10,7 +10,7 @@ export class ShownumberComponent implements OnInit {
   increaseValue() {
     this.defaultValue++;
   }
-  decreaseValue($event: object) {
+  decreaseValue($event: any) {
     if (this.defaultValue === 0) {
       $event.target.disabled = true;
     } else {

@@ -1,5 +1,11 @@
+
 <div class="calculator">
 
-<span *ngFor ="let calculus of calculator">{{calculus}}</span>
+<button *ngFor ="let calculus of calculator" class="numbersIn" (click)="clickNumbers($event)">{{calculus}}</button>
+
+<div class="result">
+
+<p>{{clickSimulator}}</p>
+</div>
 
 </div>

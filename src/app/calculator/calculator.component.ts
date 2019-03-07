@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NumbercalculatorService } from '../numbercalculator.service';
+import { NumbercalculatorService } from '../numbercalculator.service';
 
 @Component({
   selector: 'app-calculator',
@@ -8,17 +8,14 @@ import {NumbercalculatorService } from '../numbercalculator.service';
 })
 export class CalculatorComponent implements OnInit {
 
-calculator:number[];
+  constructor(numberCalculatorService: NumbercalculatorService) { this.calculator = numberCalculatorService.getCourses(); }
 
+  calculator: number[];
+  clickSimulator: number;
 
-  constructor(numberCalculatorService: NumbercalculatorService) {
-    this.calculator = numberCalculatorService.getCourses();
+  clickNumbers(event: any) {
+    this.clickSimulator = event.target.innerHTML;
   }
-
-
-
-
-
 
   ngOnInit() {
   }
