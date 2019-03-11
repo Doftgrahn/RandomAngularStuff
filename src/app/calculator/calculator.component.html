@@ -1,11 +1,21 @@
+<div class="wrapper">
 
-<div class="calculator">
+  <h2>{{title}}</h2>
 
-<button *ngFor ="let calculus of calculator" class="numbersIn" (click)="clickNumbers($event)">{{calculus}}</button>
+  <div class="calculator">
 
-<div class="result">
 
-<p>{{clickSimulator}}</p>
-</div>
+    <button *ngFor="let calculus of calculator" class="numbersIn" (click)="clickNumbers($event)">{{calculus}}</button>
+
+    <button *ngFor="let operator of operators" class="operatorz">{{operator}}</button>
+
+    <div class="result">
+
+    </div>
+
+
+  </div>
+  <p>{{clickSimulator}}</p>
+
 
 </div>
